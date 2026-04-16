@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Acessível | UX & Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header role="banner">
+        <nav class="navbar" aria-label="Menu Principal">
+            <div class="logo">DevMentor</div>
+            <div class="accessibility-controls">
+                <button onclick="changeFontSize(1)" aria-label="Aumentar fonte">A+</button>
+                <button onclick="changeFontSize(-1)" aria-label="Diminuir fonte">A-</button>
+                <button onclick="toggleContrast()" id="contrast-toggle" aria-label="Alternar Alto Contraste">
+                    Contraste
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero scroll-reveal" aria-labelledby="hero-title">
+            <h1 id="hero-title">Inovação com Acessibilidade</h1><p>Criando experiências digitais que todos podem usar.</p>
+        </section>
+
+        <section class="services" aria-labelledby="services-title">
+            <h2 id="services-title">Nossos Serviços</h2>
+            <div id="cards-container" class="grid-container">
+                </div>
+        </section>
+
+        <section class="carousel-section scroll-reveal" aria-label="Carrossel de Imagens">
+            <div class="carousel">
+                <div id="carousel-content" class="carousel-inner">
+                    </div>
+                <div class="carousel-nav">
+                    <button onclick="prevSlide()" aria-label="Slide anterior">❮</button>
+                    <button onclick="nextSlide()" aria-label="Próximo slide">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">Perguntas Frequentes</h2>
+            <div id="faq-container">
+                </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2023 DevMentor. Código modular e acessível.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
